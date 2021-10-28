@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lesson 35 Maps</title>
+  </head>
+  <body>
+    <section class="content">
+      <div class="content__wrapper">
+        <h1>Plan a route</h1>
+        <label for="address__one">Point A:</label>
+        <input
+          class="content__start"
+          type="text"
+          name="address__one"
+          id="address__one"
+        />
+        <label for="address__two">Point B:</label>
+        <input
+          class="content__end"
+          type="text"
+          name="address__two"
+          id="address__two"
+        />
+        <input class="content__calc" type="submit" value="Calculate" />
+        <div class="content__map" id="map"></div>
+      </div>
+    </section>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=[API_KEY]&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
